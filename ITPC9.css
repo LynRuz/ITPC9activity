@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #3b0a63, #7c2cff, #b48fff);
+    background-size: 300% 300%;
+    animation: gradientMove 12s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Background animation */
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(18px);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(132, 0, 255, 0.4);
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 15px rgba(180, 133, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #f0d9ff;
+    text-shadow: 0 0 10px #b47bff;
+}
+
+form {
+    text-align: left;
+}
+
+/* Labels */
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+    color: #f7e8ff;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid rgba(200, 150, 255, 0.6);
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    outline: none;
+    font-size: 14px;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(150, 80, 255, 0.3);
+}
+
+input::placeholder {
+    color: #e7d2ff;
+}
+
+input:focus {
+    border-color: #d8b4ff;
+    box-shadow: 0 0 15px rgba(200, 125, 255, 0.7);
+}
+
+/* Button */
+button {
+    width: 60%;               
+    padding: 10px;            
+    background: linear-gradient(135deg, #a259ff, #d09bff);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;          
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0 0 10px rgba(190, 110, 255, 0.7);
+    transition: 0.3s ease;
+
+    display: block;       /* makes centering work */
+    margin: 15px auto 0;  /* centers the button */
+    text-align: center;   /* makes text centered */
+}
+
+button:hover {
+    background: linear-gradient(135deg, #c890ff, #e8ccff);
+    color: #3b0a63;
+    box-shadow: 0 0 15px rgba(230, 190, 255, 1);
+}
